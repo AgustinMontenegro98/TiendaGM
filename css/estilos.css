@@ -1,0 +1,610 @@
+/*Selector Universal*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(17, 17, 17);
+    background-size: cover;
+    background-repeat: none;
+}
+
+p{
+    font-size: 18px;
+}
+
+ul{ /*Sacando estilo a los hipervinculos y listas*/
+    list-style-type: none;   
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.header{ /*Fondo header y menu*/
+    width: 100%;
+    background-color: rgb(13, 13, 13);
+}
+
+nav ul{ /*Menu*/
+    display: flex;
+    justify-content: center;
+    }
+
+nav ul li{ /*Forma y color botones menu*/
+    background-color: rgb(67, 4, 126);
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.bg-light {
+    background-color: rgb(13, 13, 13)!important;
+}
+
+.btn-outline-success {
+    background-color: rgb(67, 4, 126)!important;
+}
+
+.btn {
+    background-color: rgb(67, 4, 126)!important;
+    border-color:rgb(67, 4, 126)!important ;
+    color:  white!important;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: white!important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    color: white;!important
+}
+
+
+nav ul li a{
+    color: aliceblue;
+}
+
+header section article img{ /*Logo*/
+    width: 150px;
+}
+
+header section article input{ /*Buscador*/
+    border: 3.5px solid rgb(67, 4, 126);
+}
+
+
+header section{ /*Header ubicacion*/
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+header section article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header section article:nth-child(1){
+    min-width: 20%;
+}
+
+header section article:nth-child(2){
+    min-width: 60%;
+}
+
+header section article:nth-child(3){
+    min-width: 20%;
+}
+
+header section article label{
+    background-color: rgb(67, 4, 126);
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.carrito{ /*Carrito*/
+    background-color: rgb(67, 4, 126);
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.carrito{
+    width: 40px;
+    height: 40px;
+}
+
+main h1{ /*PROMOCIONES*/
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+main article{ /*Banner*/
+    width: 100%;
+    height: 600px;
+}
+
+#banner{
+    background-image: url(../img/banner-pc.jpg);
+    background-position: center;
+    background-size: 100%;
+}
+
+.titulos{ /*Titulo Computadoras recomendadas y boton*/
+    font-size: 32px;
+    color: rgb(230, 230, 230);
+    display: flex;
+    margin: 20px 5px 20px 5px;
+}
+
+.titulos h4{ 
+    display: flex;
+    margin: 0px 30px 0px 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(230, 230, 230);
+}
+
+.titulos button{
+    margin: 0px 0px 0px 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    background-color:  rgb(17, 17, 17);;
+    border: solid 1px;
+    border-color:white;
+    border-radius: 50px;
+    padding: 1px 20px;
+}
+
+.tituloscomputadoras{ /*Titulo COMPUTADORAS ARMADAS y Categoria*/
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloscomputadoras h1{
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(230, 230, 230);
+    display: flex;
+    margin: 20px 5px 20px 0px;
+}
+
+.tituloscomputadoras h4{
+    display: flex;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(67, 4, 126)
+}
+
+/*Checkboxs*/
+
+.checksycomputadoras{ 
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+}
+
+/* .checksycomputadoras .recomendadas{
+    display: flex;
+    justify-content: center;
+} */
+
+.checksycomputadoras .checkboxs h4{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(67, 4, 126)
+}
+
+.checksycomputadoras .checkboxs p{
+    margin-top: 20px;
+    color: white;
+}
+
+.checksycomputadoras .checkboxs h5{
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    color: rgb(67, 4, 126);
+    margin-bottom:20px ;
+    
+}
+
+.checksycomputadoras .checkboxs h4{
+    margin: 50px 0 0 0;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.checkboxs table tr th{
+    color: white;
+}
+
+.checkboxs table tr td{
+    color: white;
+}
+
+.horarios-pc{
+    margin-bottom: 30px;
+}
+
+.horarios-pc h5{
+    margin-top: 20px;
+}
+
+/*Computadoras Recomendadas fotos y botones*/
+
+.recomendadas{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.recomendadas article{
+    max-width: 20em;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+.recomendadas article img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.recomendadas article p{
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+    color:white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.recomendadas article div{
+    display: flex;
+    justify-content: center;
+}
+
+
+.recomendadas article div button{
+    margin: 20px 0px 0px 20px;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(67, 4, 126);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+/*Ancho Notebooks*/
+
+.notebooks {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.notebooks article{
+    max-width:15em;
+}
+
+.componentes article{
+    display: flex;
+    flex-direction: row;
+    padding: 25px 0 15px 45px;
+    max-width: 90%;
+}
+.componentes article div p{
+color:white;
+min-height: 70%;
+}
+
+.componentes article img{
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+.componentes article div button{
+    margin: 0px 0px 20px 0;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(67, 4, 126);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+
+}
+
+.componentes article div{
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    max-height: 10%;
+    padding: 20px;
+
+}
+
+.recuadro{
+    border: solid 1px;
+    border-color: white;
+    max-width: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tamañocontacto {
+    width: 60%;
+
+}
+
+.tamañocontacto div label {
+    color: white;
+}
+.table thead tr th{
+    color: rgb(67, 4, 126);
+}
+
+.table tbody tr th {
+    color:  rgb(67, 4, 126);
+}
+
+.table tbody tr td {
+    color: white;
+}
+
+.anchodesplegable {
+    width: 15%;
+}
+
+
+/*Como armar una PC*/
+
+.armadopc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.armadopc p{
+    margin: 20px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(230, 230, 230);
+}
+
+/*Fondo del Footer*/
+
+footer{ 
+    width: 100%;
+    background-image: url('../img/background\ footer.png');
+    background-size: cover;
+    background-position: center;
+}
+
+footer section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    gap: 1em;
+    padding: 15px 15px;
+}
+
+footer section article{
+    color: rgb(96, 240, 161);
+    display: flex;
+    justify-content: center;
+}
+
+footer section article li a{
+    color: azure;
+}
+
+footer section article a img{
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 0;
+}
+
+
+
+/* MEDIAQUERIES PARA CELU - S20 ULTRA 412x915*/
+/* Index */
+@media (max-width: 915px){
+    .menu-pc {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .menu-cel section article img {
+        width: 50px;
+    }
+    header section article:nth-child(2) {
+        min-width: 0;
+    }
+
+    main article { /*Banner*/
+        width: 100%;
+        height: 150px;
+    }
+    .recomendadas{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+    .recomendadas article {
+        width: 170px;
+        margin: 1em;
+    }
+
+    .recomendadas article p {
+        overflow: scroll;
+        height: 5em;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .container{
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .recomendadas article div button {
+        margin: 5px 0 0 5px;
+        padding: 5px 5px;
+    }
+
+    .footer-pc {
+        display: none;
+    }
+
+    .footer-cel {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-cel{ 
+        width: 100%;
+        background-image: url('../img/background\ footer.png');
+        background-size: cover;
+        background-position: center;
+        color: rgb(96, 240, 161);
+    }
+
+    .footer-cel p:last-child {
+        font-size: 12px;
+    }
+    
+    
+    .footer-cel article div a img{
+        width: 40px;
+        height: 40px;
+        margin: 10px 10px 0 0;
+    }
+
+    .footer-cel article div h5{
+        color: azure;
+    }
+
+    .armadopc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 1em 0;
+    }
+    
+    .armadopc p{
+        font-size: 25px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        color: rgb(230, 230, 230);
+    }
+
+    .armadopc iframe {
+        width: 280px;
+        height: 157px;
+    }
+
+    .notebooks article:last-child {
+        display: none;
+    }
+    
+    .horarios-pc {
+        display: none;
+    }
+
+    .horarios-celu {
+        margin-bottom: 1.5em;
+    }
+
+    .recuadro {
+        max-width: 90%;
+    }
+
+}
+
+/* MEDIAQUERIES PARA PC - Min 915*/
+@media (min-width: 915px) {
+    .menu-cel {
+        display: none;
+    }
+    
+    .footer-cel {
+        display: none;
+    }
+
+    .horarios-celu {
+        display: none;
+    }
+}
+
+/*Transform*/
+
+.titulos button {
+    transition: transform 2s;
+}
+
+.titulos button:hover {
+    transform:scale(1.1,1.1);
+}
+
+.recomendadas article button {
+    transition: transform 2s;
+}
+
+.recomendadas article button:hover {
+    transform:scale(1.1,1.1);
+}
+
+/*gradiente*/
+
+.header {
+    background-image: linear-gradient(to right, rgb(13, 13, 13), rgb(29, 29, 29));
+}
+
+main h1 {
+    animation-duration: 2s;
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes movimiento {
+    from {left: 0px;}
+    to {right: 20px;}
+}
+
+.recomendadas article button 

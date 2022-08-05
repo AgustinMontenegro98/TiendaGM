@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" rel="stylesheet">
+    <title>TiendaGM</title>
+</head>
+
+<body>
+<!-- Menu bootstrap -->
+
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+        <nav class="navbar bg-light">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="../img/logo.png" alt="" width="80" height="80">
+              </a>
+            </div>
+          </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+</nav>
+
+
+
+<div class="container"> <!--Ancho pagina 80%-->
+
+    <div class="tituloscomputadoras">
+        <h1>CONTACTO</h1>
+    </div>
+
+    <!--<div class="checksycomputadoras contacto">
+        <section class="checkboxs recuadro"> <!--Formulario
+            <h5>Dejanos tu consulta:</h5>
+            <form action="procesar.php" name="contacto" method="post" >
+                <p>
+                    <label>Nombre:
+                        <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    </label>
+                </p>
+            
+                <p>
+                    <label>Apellido:
+                        <input type="text" name="apellido" placeholder="Tu apellido" required>
+                    </label>
+                </p>
+            
+                <p>
+                    <label>Email:
+                        <input type="email" name="email" placeholder="Tu email" required>
+                    </label>
+                </p>
+            
+            <h5>Tu consulta:</h5> <!--Tu consulta
+            <textarea name="consulta" id="" cols="30" rows="10"></textarea>
+            
+                <p> <!--Boton enviar
+                    <button type="submit">Enviar</button>
+                </p>
+        </section> -->
+
+        <!-- Formulario Bootstrap -->
+
+        <form class="row g-3 tamañocontacto">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Nombre</label>
+              <input type="email" class="form-control" id="Nombre">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Apellido</label>
+              <input type="password" class="form-control" id="apellido">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Email</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="xxxxxx@xxxx.xxx">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Tu mensaje</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Completar">
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+
+        <!--Menu desplegable Sucursal
+        <section class="checkboxs"> 
+            <h5>Sucursal:</h5> 
+            <select name="sucursal">
+                <option value="sucursalObelisco">Sucursal Obelisco</option>
+                <option value="sucursalPalermo">Sucursal Palermo</option>
+                <option value="sucursalRecoleta">Sucursal Recoleta</option>
+            </select>
+        </section>-->
+
+        <select class="form-select mt-4 mb-4 anchodesplegable" aria-label="Default select example">
+            <option selected>Sucursales</option>
+            <option value="1">Sucursal Obelisco</option>
+            <option value="2">Sucursal Palermo</option>
+            <option value="3">Sucursal Recoleta</option>
+        </select>
+
+        <!--Tabla horarios
+        <!-- Horarios para responsive de pc 
+        <section class="checkboxs horarios-pc">
+            <h5>Horarios de atención:</h5>
+            <table cellpadding="5" border=1>
+                <tr>
+                    <th>Dia/Horario</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                    <th>Feriados</th>
+                </tr>
+            
+                <tr>
+                    <td>9 a 18hs</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td>X</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            
+                <tr>
+                    <td>9 a 13hs</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                    <td>X</td>
+                </tr>
+            
+                <tr>
+                    <td>Cerrado</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>X</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Tabla Bootstrap -->
+
+        <table class="table mt-3 mb-5">
+            <thead>
+              <tr>
+                <th>Dia/Horario</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miercoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+                <th>Sabado</th>
+                <th>Domingo</th>
+                <th>Feriados</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">9 a 18hs</th>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">9 a 13hs</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td>X</td>
+              </tr>
+              <tr>
+                <th scope="row">Cerrado</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+        <!-- Horarios para responsive de cel -->
+        <section class="checkboxs horarios-celu">
+            <h5>Horarios de atención:</h5>
+            <table cellpadding="5" border=1>
+                <tr>
+                    <th>Dia/Horario</th>
+                    <th>9 a 18hs</th>
+                    <th>9 a 13hs</th>
+                    <th>Cerrado</th>
+                </tr>
+            
+                <tr>
+                    <td>Lunes</td>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Martes</td>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Miércoles</td>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>x</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sábado</td>
+                    <td></td>
+                    <td>x</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Domingo</td>
+                    <td></td>
+                    <td></td>
+                    <td>x</td>
+                </tr>
+                <tr>
+                    <td>Feriado</td>
+                    <td></td>
+                    <td>x</td>
+                    <td></td>
+                </tr>
+
+            </table>
+        </section>
+
+    </div>
+</div>
+
+<footer class="footer-pc"> <!--Footer-->
+    <section>
+        <article>
+            <div>
+                <h5>Categorias</h5>
+                <ul>
+                    <li><a href="">Placas de Video</a></li>
+                    <li><a href="">Procesadores</a></li>
+                    <li><a href="">Memorias</a></li>
+                    <li><a href="">Almacenamiento</a></li>
+                    <li><a href="">Refrigeracion</a></li>
+                    <li><a href="">Todas las categorias</a></li>
+                </ul>
+            </div>
+        </article>
+
+        <article>
+            <div>
+                <h5>Marcas</h5>
+                <ul>
+                    <li><a href="">Intel</a></li>
+                    <li><a href="">AMD</a></li>
+                    <li><a href="">Asus</a></li>
+                    <li><a href="">Nvidia</a></li>
+                </ul>
+            </div>
+        </article>
+        <article>
+            <div>
+                <h5>Informacion Util</h5>
+                <ul>
+                    <li><a href="">Faq</a></li>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Ubicacion</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+        </article>
+        <article> <!--Logos Redes-->
+            <div>
+                <h5>Redes</h5>
+                    <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
+                    <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
+                    <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
+                    <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
+            </div>
+        </article>
+    </section>
+</footer>
+
+<footer class="footer-cel">
+    <p>Seguinos en las Redes</p>
+    <article> <!--Logos Redes-->
+        <div>
+            <h5>Redes</h5>
+                <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
+                <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
+                <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
+                <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
+        </div>
+    </article>
+    <p>Lunes a viernes de 9:00 a 18:00hs. Sabados de 9:00 a 13:00hs.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
