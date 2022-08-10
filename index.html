@@ -59,17 +59,11 @@
     </header>
 </div>  -->
 
-<!-- Menu bootstrap -->
+<!-- Menu bootstrap Celu-->
 
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light containertwo">
     <div class="container-fluid">
-        <nav class="navbar bg-light">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img src="./img/logo.png" alt="" width="80" height="80">
-              </a>
-            </div>
-          </nav>
+        
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -91,13 +85,59 @@
             <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
     </div>
+    </div>      
   </nav>
+
+<!-- Menu sin bootstrap Pc -->
+
+<nav class="menusinboot">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/computadoras.html">Computadoras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/notebooks.html">Notebooks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/componentes.html">Componentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+          </li>
+        </ul>  
+  </nav>
+
+<section class="logosinboot">
+    <article class="chico logochico">
+        <a href="#">
+            <img src="./img/logo.png" alt="">
+        </a>
+    </article>
+
+    <article class="medio">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </article>
+
+    <article class="chico comprar">
+        <a href="#">
+            <img src="./img/carrito.png" alt="" width="40" height="40">
+        </a>
+    </article>
+</section>
+
+
+
+
+
+
+
 
 <main> <!--Titulo-->
     <h1>PROMOCIONES</h1>
@@ -130,14 +170,14 @@
 
 
 
-<div class="container"> <!--Ancho pagina 80%-->
+<!-- <div class="container"> <!--Ancho pagina 80%--
 
     <div class="titulos">
         <h4>Computadoras Recomendadas</h4>
         <button>Ver Todo</button>
     </div>
 
-    <section class="recomendadas"> <!--Computadoras recomendadas-->
+    <section class="recomendadas"> <!--Computadoras recomendadas--
         <article>
             <img src="./img/pcceleron.png" alt="pc1">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex officia quibusdam velit unde deserunt ratione necessitatibus atque vitae blanditiis quod! Provident nostrum, quod necessitatibus facere officia hic voluptatem delectus totam!</p>
@@ -180,7 +220,7 @@
         <button>Ver Todo</button>
     </div>
 
-    <section class="recomendadas notebooks"> <!--Notebooks recomendadas-->
+    <section class="recomendadas notebooks"> <!--Notebooks recomendadas--
         <article>
             <img src="./img/notebookdell.png" alt="notebook1">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex officia quibusdam velit unde deserunt ratione necessitatibus atque vitae blanditiis quod! Provident nostrum, quod necessitatibus facere officia hic voluptatem delectus totam!</p>
@@ -231,7 +271,178 @@
         <p>Como armar una PC</p>
         <iframe width="840" height="472" src="https://www.youtube.com/embed/omrvbgiyyOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
+</div>-->
+
+<!-- Computadoras recomendadas Bootstrap -->
+<div class="container80">
+
+<div class="containertitulos">
+    <div class="titulos">
+        <h4>Computadoras Recomendadas</h4>
+        <button>Ver Todo</button>
+    </div>
 </div>
+
+<!-- Bootstrap Cajas computadoras -->
+<div class="container text-center mb-1 mt-2">
+    <div class="row align-items-start anchocompus rowpc">
+    <div class="col-auto mb-5 rowpc"> <!-- Caja 1 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/pcceleron.png" class="card-img-top" alt="pc1">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">PC Intel Celeron</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-auto mb-3 rowpc"> <!-- caja 2 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/pci3.png" class="card-img-top" alt="pc2">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">PC Intel Core i3</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-auto mb-3 rowpc"> <!-- caja 3 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/pcryzen3.png" class="card-img-top" alt="pc3">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">PC Ryzen 3</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+    </div>
+    <div class="col-auto mb-3 rowpc"> <!-- caja 4 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/pcryzen7.png" class="card-img-top" alt="notebook4">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">PC Ryzen 7</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="containertitulos">
+    <div class="titulos">
+        <h4>Notebooks Recomendadas</h4>
+        <button>Ver Todo</button>
+    </div>
+</div>
+
+    <!-- Bootstrap Cajas Notebooks -->
+<div class="container text-center mb-1 mt-2">
+    <div class="row align-items-start anchocompus rowpc">
+    
+        <div class="col-auto mb-3 rowpc"> <!-- Caja 1 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/notebookdell.png" class="card-img-top" alt="notebook1">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">Dell</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-auto mb-3 rowpc"> <!-- caja 2 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/notebooklenovopentium.png" class="card-img-top" alt="notebook2">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">Lenovo Intel Pentium</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-auto mb-3 rowpc"> <!-- caja 3 -->
+        <div class="card mt-5 m-lg-5" style="width: 18rem;">
+            <img src="./img/notebookhpryzen3.png" class="card-img-top" alt="notebook3">
+        <div class="card-body m-lg-1">
+            <h5 class="card-title">HP Ryzen 3</h5>
+            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+        </div>
+        <div class="card-body botonesvermasycomprar">
+            <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+            <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+        </div>
+        </div>
+        </div>
+        <div class="col-auto mb-3 rowpc"> <!-- caja 4 -->
+            <div class="card mt-5 m-lg-5" style="width: 18rem;">
+                    <img src="./img/notebookgameraceri5.png" class="card-img-top" alt="notebook4">
+                <div class="card-body m-lg-1">
+                    <h5 class="card-title">Gamer Razer i5</h5>
+                    <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+                </div>
+                <div class="card-body botonesvermasycomprar">
+                    <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+                    <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="armadopc">
+    <p>Como armar una PC</p>
+    <iframe width="840" height="472" src="https://www.youtube.com/embed/omrvbgiyyOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+</div>
+
+
+    <!--<div class="card mt-5 m-lg-5" style="width: 18rem;">
+        <img src="./img/pcceleron.png" class="card-img-top" alt="pc1">
+    <div class="card-body m-lg-1">
+        <h5 class="card-title">PC Intel Celeron</h5>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+    </div>
+    <div class="card-body botonesvermasycomprar">
+        <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+        <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+    </div>
+    </div>
+
+
+    <div class="card mt-5 m-lg-5" style="width: 18rem;">
+        <img src="./img/pcceleron.png" class="card-img-top" alt="pc1">
+    <div class="card-body m-lg-1">
+        <h5 class="card-title">PC Intel Celeron</h5>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor dignissimos saepe dicta, eum corrupti fuga illo veritatis excepturi reiciendis illum cumque maiores?</p>
+    </div>
+    <div class="card-body botonesvermasycomprar">
+        <a href="./paginas/computadoras.html" class="card-link">Ver mas</a>
+        <a href="./paginas/computadoras.html" class="card-link">Comprar</a>
+    </div>
+</div>-->
+</div>
+</div>
+
+</div>
+
 
 <footer class="footer-pc"> <!--Footer-->
     <section>

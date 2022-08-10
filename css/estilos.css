@@ -24,7 +24,11 @@ a{
     text-decoration: none;
 }
 
-.container{
+
+
+.containertitulos{
+    display: flex;
+    justify-content:start;
     margin: 0 auto;
     max-width: 80%;
 }
@@ -128,6 +132,21 @@ header section article label{
     height: 40px;
 }
 
+.navbar-toggler-icon{
+    color: white !important;
+    background-color: rgb(67, 4, 126);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.navbar-toggler {
+    background-color:rgb(67, 4, 126) ;
+}
+
+nav {
+    background-color: ;
+}
 main h1{ /*PROMOCIONES*/
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
@@ -158,11 +177,15 @@ main article{ /*Banner*/
 
 .titulos h4{ 
     display: flex;
-    margin: 0px 30px 0px 20px;
+    margin: 0px 30px 0px 0px;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     color: rgb(230, 230, 230);
+}
+
+.rowpc {
+    margin-left: 0 !important;
 }
 
 .titulos button{
@@ -201,7 +224,6 @@ main article{ /*Banner*/
 
 .checksycomputadoras{ 
     display: grid;
-    grid-template-columns: repeat(2,2fr);
 }
 
 /* .checksycomputadoras .recomendadas{
@@ -216,8 +238,9 @@ main article{ /*Banner*/
     color: rgb(67, 4, 126)
 }
 
-.checksycomputadoras .checkboxs p{
-    margin-top: 20px;
+.checksycomputadoras .checkboxs div label{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     color: white;
 }
 
@@ -232,6 +255,15 @@ main article{ /*Banner*/
 
 .checksycomputadoras .checkboxs h4{
     margin: 50px 0 0 0;
+}
+
+.flexcomputadoras {
+    display: flex;
+}
+
+.container80 {
+    max-width: 80%;
+    margin-left: 10%;
 }
 
 .contacto{
@@ -300,6 +332,92 @@ main article{ /*Banner*/
     border-radius: 50px;
     padding: 10px 20px;
 }
+
+.card {
+    padding: 20px;
+    background-color: rgb(27, 27, 27);
+    color:white;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius:25px ;
+}
+.medida div img{
+   height: 200px;
+}
+
+.medida{
+    width: 70%;
+}
+
+
+.card img{
+    border-radius: 25px!important;
+}
+
+.botonesvermasycomprar{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body{
+    padding: 0 !important ;
+    padding-top: 15px !important;
+}
+
+.nopadding {
+    padding: 0 !important;
+}
+
+.columncomponentes{
+ 
+}
+
+.colorvioleta{
+    color:  rgb(133, 54, 206);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+.violetapagina{
+    border-color: rgb(67, 4, 126);
+}
+
+.card-body a{
+    display: flex;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(155,38,231,1) 0%, rgba(72,0,135,1) 100%);
+    color: white;
+    border-radius: 50px;
+    padding: 10px ;
+}
+
+.anchocompus {
+    display: flex;
+    justify-content: space-between;
+    width: 100% !important;
+}
+
+.anchocomponentes{
+    flex-direction: column;
+    width: 80%;
+
+}
+
+.text-center{
+    text-align: left !important;
+}
+
+
+
+@media (min-width: 992px) {
+    .m-lg-5{
+    margin: 0rem!important;
+    }
+}
+
 
 /*Ancho Notebooks*/
 
@@ -436,11 +554,157 @@ footer section article a img{
     margin: 10px 10px 0 0;
 }
 
+.containertwo {
+    display: flex;
+    justify-content: center!important;
+    max-width: 50% !important;
+    }
+
+    .around{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navcenter{
+        display: flex!important;
+        justify-content: center!important;
+    }
+
+    .buscador{
+        display: flex;
+        flex-direction: row;
+        min-width: 100%;
+        margin: 0 auto;
+    }
+
+    .buscador nav{
+        max-width: 25%;
+    }
+
+    .buscador form{
+        max-width: 50%;
+    }
+
+/* Menu sin bootstrap */
+
+    .logosinboot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 5em;
+        min-width: 100%;
+        background-color: rgb(13, 13, 13)
+    }
+
+    .chico {
+        max-width: 25%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .logochico a img {
+        width: 7em;
+    }
+
+    .medio {
+        max-width: 50%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .comprar a{
+        background-color:rgb(67, 4, 126);
+        border-radius: 1em;
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    .logosinboot article form input {
+        width: 45em;
+    }
+
+    .logosinboot article form button {
+        height: 3.3em;
+        margin-left: 1em;
+    }
+
+    .menusinboot ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .menusinboot ul li {
+        min-width: 4em;
+        text-align: center;
+    }
+
+    footer section article div ul {
+        padding-left: 0!important;
+    }
+
+    /*Transform*/
+
+.titulos button { /* Botones */
+    transition: transform 0.5s;
+}
+
+.titulos button:hover {
+    transform:scale(1.1,1.1);
+}
+
+.recomendadas article button {
+    transition: transform 2s;
+}
+
+.recomendadas article button:hover {
+    transform:scale(1.1,1.1);
+}
+
+.card-body a { /* botones ver mas y comprar */
+    transition: transform 0.5s;
+}
+
+.card-body a:hover {
+    transform:scale(1.1,1.1);
+}
+
+/*gradiente*/
+
+.card-body a {
+    background-color: linear-gradient (to right,rgb(242, 247, 247), rgb(126, 4, 10) ) !important;
+}
+
+/* Animacion */
+.footer-pc section article {
+    animation-duration: 0.5s;
+    animation-name: movimiento;
+    animation-iteration-count: initial;
+    position:relative;
+}
+
+@keyframes movimiento {
+    from {left:10px;}
+    to {right:10px;}
+    }
+
+
+
+
+
 
 
 /* MEDIAQUERIES PARA CELU - S20 ULTRA 412x915*/
 /* Index */
 @media (max-width: 915px){
+    .menusinboot {
+        display: none;
+    }
+    .logosinboot {
+        display: none;
+    }
+
     .menu-pc {
         display: none;
     }
@@ -480,6 +744,11 @@ footer section article a img{
         max-width: 90%;
     }
 
+    .alturadesplegable{
+        height: 50px;
+        width: 0px;
+    }
+
     .recomendadas article div button {
         margin: 5px 0 0 5px;
         padding: 5px 5px;
@@ -488,6 +757,7 @@ footer section article a img{
     .footer-pc {
         display: none;
     }
+
 
     .footer-cel {
         display: flex;
@@ -569,42 +839,12 @@ footer section article a img{
     .horarios-celu {
         display: none;
     }
+
+    .containertwo {
+        display: none;
+    }
 }
 
-/*Transform*/
 
-.titulos button {
-    transition: transform 2s;
-}
 
-.titulos button:hover {
-    transform:scale(1.1,1.1);
-}
-
-.recomendadas article button {
-    transition: transform 2s;
-}
-
-.recomendadas article button:hover {
-    transform:scale(1.1,1.1);
-}
-
-/*gradiente*/
-
-.header {
-    background-image: linear-gradient(to right, rgb(13, 13, 13), rgb(29, 29, 29));
-}
-
-main h1 {
-    animation-duration: 2s;
-    animation-name: movimiento;
-    animation-iteration-count: infinite;
-    position: relative;
-}
-
-@keyframes movimiento {
-    from {left: 0px;}
-    to {right: 20px;}
-}
-
-.recomendadas article button 
+fro

@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<!-- Menu bootstrap -->
+<!-- Menu bootstrap 
 
 <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -49,12 +49,86 @@
         </form>
       </div>
     </div>
+</nav> -->
+
+<!-- NAV -->
+
+<nav class="navbar navbar-expand-lg bg-light containertwo">
+    <div class="container-fluid">
+        
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+          </li>
+        </ul>
+    </div>
+    </div>      
+  </nav>
+
+<!-- Menu sin bootstrap Pc -->
+
+<nav class="menusinboot">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contacto</a>
+        </li>
+    </ul>  
 </nav>
 
+<section class="logosinboot">
+    <article class="chico logochico">
+        <a href="#">
+            <img src="../img/logo.png" alt="">
+        </a>
+    </article>
+
+    <article class="medio">
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+    </article>
+
+    <article class="chico comprar">
+        <a href="#">
+            <img src="../img/carrito.png" alt="" width="40" height="40">
+        </a>
+    </article>
+</section>
 
 
-<div class="container"> <!--Ancho pagina 80%-->
 
+<div class="container80"> <!--Ancho pagina 80%-->
+
+    
     <div class="tituloscomputadoras">
         <h1>CONTACTO</h1>
     </div>
@@ -91,28 +165,33 @@
 
         <!-- Formulario Bootstrap -->
 
+        
         <form class="row g-3 tamañocontacto">
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Nombre</label>
-              <input type="email" class="form-control" id="Nombre">
+              <input type="email" class="form-control" id="Nombre" placeholder="Tu Nombre">
             </div>
             <div class="col-md-6">
               <label for="inputPassword4" class="form-label">Apellido</label>
-              <input type="password" class="form-control" id="apellido">
+              <input type="password" class="form-control" id="apellido" placeholder="Tu Apellido">
             </div>
             <div class="col-12">
               <label for="inputAddress" class="form-label">Email</label>
               <input type="text" class="form-control" id="inputAddress" placeholder="xxxxxx@xxxx.xxx">
             </div>
             <div class="col-12">
-              <label for="inputAddress2" class="form-label">Tu mensaje</label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Completar">
+              <label for="inputAddress2" class="form-label">Dejanos tu consulta</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Tu mensaje">
             </div>
 
             <div class="col-12">
               <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </form>
+
+          <div class="tituloscomputadoras">
+            <h1>HORARIOS DE ATENCIÓN</h1>
+        </div>
 
         <!--Menu desplegable Sucursal
         <section class="checkboxs"> 
@@ -125,7 +204,7 @@
         </section>-->
 
         <select class="form-select mt-4 mb-4 anchodesplegable" aria-label="Default select example">
-            <option selected>Sucursales</option>
+            <option selected>Sucursal</option>
             <option value="1">Sucursal Obelisco</option>
             <option value="2">Sucursal Palermo</option>
             <option value="3">Sucursal Recoleta</option>
@@ -188,7 +267,7 @@
 
         <!-- Tabla Bootstrap -->
 
-        <table class="table mt-3 mb-5">
+        <table class="table mt-3 mb-5 horarios-pc">
             <thead>
               <tr>
                 <th>Dia/Horario</th>
@@ -239,7 +318,7 @@
             </tbody>
           </table>
 
-        <!-- Horarios para responsive de cel -->
+        <!-- Horarios para responsive de cel --
         <section class="checkboxs horarios-celu">
             <h5>Horarios de atención:</h5>
             <table cellpadding="5" border=1>
@@ -300,7 +379,70 @@
                 </tr>
 
             </table>
-        </section>
+        </section> -->
+
+        <!-- Tabla horarios para celu -->
+
+        <table class="table mt-3 mb-5 horarios-celu">
+          <thead>
+            <tr>
+              <th>Dia/Horario</th>
+              <th>9 a 18hs</th>
+              <th>9 a 13hs</th>
+              <th>Cerrado</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr>
+              <th scope="row">Lunes</th>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Martes</th>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Miercoles</th>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Jueves</th>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Viernes</th>
+              <td>X</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Sabado</th>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row">Domingo</th>
+              <td></td>
+              <td></td>
+              <td>X</td>
+            </tr>
+            <tr>
+              <th scope="row">Feriado</th>
+              <td></td>
+              <td>X</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
 
     </div>
 </div>
