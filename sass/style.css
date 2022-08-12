@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(13, 13, 13);
+  background-color: rgb(17, 17, 17);
   background-size: cover;
   background-repeat: none;
 }
@@ -37,21 +37,16 @@ a {
   background-color: rgb(13, 13, 13);
 }
 
-nav { /*Menu*/
-  background-color: rgb(13, 13, 13);
-}
-nav ul {
+nav ul { /*Menu*/
   display: flex;
   justify-content: center;
 }
+
 nav ul li { /*Forma y color botones menu*/
   background-color: rgb(67, 4, 126);
   margin: 10px;
   padding: 7px;
   border-radius: 10px;
-}
-nav ul li a {
-  color: aliceblue;
 }
 
 .bg-light {
@@ -65,18 +60,22 @@ nav ul li a {
 .btn {
   background-color: rgb(67, 4, 126) !important;
   border-color: rgb(67, 4, 126) !important;
-  color: aliceblue !important;
+  color: white !important;
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
-  color: aliceblue !important;
+  color: white !important;
 }
 
 .nav-link {
-  color: aliceblue;
+  color: white;
 }
 
 .navbar-nav {
+  color: white;
+}
+
+nav ul li a {
   color: aliceblue;
 }
 
@@ -89,7 +88,7 @@ header section article input { /*Buscador*/
 }
 
 header section { /*Header ubicacion*/
-  color: aliceblue;
+  color: white;
   display: flex;
   flex-direction: row;
 }
@@ -142,11 +141,15 @@ header section article label {
   background-color: rgb(67, 4, 126);
 }
 
+nav {
+  background-color: rgb(13, 13, 13);
+}
+
 main h1 { /*PROMOCIONES*/
   font-size: 36px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  color: aliceblue;
+  color: rgb(230, 230, 230);
   display: flex;
   justify-content: center;
   margin: 20px 20px;
@@ -165,7 +168,7 @@ main article { /*Banner*/
 
 .titulos { /*Titulo Computadoras recomendadas y boton*/
   font-size: 32px;
-  color: aliceblue;
+  color: rgb(230, 230, 230);
   display: flex;
   margin: 20px 5px 20px 5px;
 }
@@ -176,7 +179,7 @@ main article { /*Banner*/
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  color: aliceblue;
+  color: rgb(230, 230, 230);
 }
 
 .rowpc {
@@ -187,10 +190,10 @@ main article { /*Banner*/
   margin: 0px 0px 0px 20px;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  color: aliceblue;
+  color: white;
   background-color: rgb(17, 17, 17);
   border: solid 1px;
-  border-color: aliceblue;
+  border-color: white;
   border-radius: 50px;
   padding: 1px 20px;
 }
@@ -203,7 +206,7 @@ main article { /*Banner*/
 .tituloscomputadoras h1 {
   font-size: 32px;
   font-weight: 800;
-  color: aliceblue;
+  color: rgb(230, 230, 230);
   display: flex;
   margin: 20px 5px 20px 0px;
 }
@@ -234,7 +237,7 @@ main article { /*Banner*/
 .checksycomputadoras .checkboxs div label {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
-  color: aliceblue;
+  color: white;
 }
 
 .checksycomputadoras .checkboxs h5 {
@@ -264,11 +267,11 @@ main article { /*Banner*/
 }
 
 .checkboxs table tr th {
-  color: aliceblue;
+  color: white;
 }
 
 .checkboxs table tr td {
-  color: aliceblue;
+  color: white;
 }
 
 .horarios-pc {
@@ -300,7 +303,7 @@ main article { /*Banner*/
 
 .recomendadas article p {
   padding: 20px;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(27, 27, 27);
   color: white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -323,7 +326,7 @@ main article { /*Banner*/
 
 .card {
   padding: 20px;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(27, 27, 27);
   color: white;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -417,7 +420,7 @@ main article { /*Banner*/
 }
 
 .componentes article div p {
-  color: aliceblue;
+  color: white;
   min-height: 70%;
 }
 
@@ -439,7 +442,7 @@ main article { /*Banner*/
 .componentes article div {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  background-color: rgb(17, 17, 17);
+  background-color: rgb(27, 27, 27);
   display: flex;
   flex-direction: column;
   max-height: 10%;
@@ -448,7 +451,7 @@ main article { /*Banner*/
 
 .recuadro {
   border: solid 1px;
-  border-color: aliceblue;
+  border-color: white;
   max-width: 50%;
   border-radius: 5px;
   padding: 20px;
@@ -460,7 +463,7 @@ main article { /*Banner*/
 }
 
 .tamañocontacto div label {
-  color: aliceblue;
+  color: white;
 }
 
 .table thead tr th {
@@ -472,7 +475,7 @@ main article { /*Banner*/
 }
 
 .table tbody tr td {
-  color: aliceblue;
+  color: white;
 }
 
 .anchodesplegable {
@@ -493,7 +496,7 @@ main article { /*Banner*/
   font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  color: aliceblue;
+  color: rgb(230, 230, 230);
 }
 
 /*Fondo del Footer*/
@@ -519,7 +522,7 @@ footer section article {
 }
 
 footer section article li a {
-  color: aliceblue;
+  color: azure;
 }
 
 footer section article a img {
@@ -649,10 +652,22 @@ footer section article div ul {
 
 /* Animacion */
 .footer-pc section article {
-  animation-duration: 0.5s;
-  animation-name: movimiento;
-  animation-iteration-count: initial;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: movimiento;
+          animation-name: movimiento;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
   position: relative;
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    left: 10px;
+  }
+  to {
+    right: 10px;
+  }
 }
 
 @keyframes movimiento {
@@ -785,6 +800,4 @@ footer section article div ul {
   .containertwo {
     display: none;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=style.css.map */
