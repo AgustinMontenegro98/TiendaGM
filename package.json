@@ -1,0 +1,22 @@
+{
+  "name": "tiendagmoriginal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinMontenegro98/TiendaGM.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgustinMontenegro98/TiendaGM/issues"
+  },
+  "homepage": "https://github.com/AgustinMontenegro98/TiendaGM#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
