@@ -14,7 +14,8 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: px;
+  font-family: "Poppins";
 }
 
 ul { /*Sacando estilo a los hipervinculos y listas*/
@@ -34,7 +35,7 @@ a {
 
 .header { /*Fondo header y menu*/
   width: 100%;
-  background-color: rgb(13, 13, 13);
+  background-color: rgb(0, 0, 0);
 }
 
 nav { /*Menu*/
@@ -96,8 +97,8 @@ header section { /*Header ubicacion*/
 
 header section article {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 header section article:nth-child(1) {
@@ -124,9 +125,6 @@ header section article label {
   margin: 10px;
   padding: 7px;
   border-radius: 10px;
-}
-
-.carrito {
   width: 40px;
   height: 40px;
 }
@@ -299,11 +297,8 @@ main article { /*Banner*/
 }
 
 .recomendadas article p {
-  padding: 20px;
-  background-color: rgb(17, 17, 17);
-  color: white;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 
 .recomendadas article div {
@@ -321,7 +316,7 @@ main article { /*Banner*/
   padding: 10px 20px;
 }
 
-.card {
+.card, .recomendadas article p {
   padding: 20px;
   background-color: rgb(17, 17, 17);
   color: white;
@@ -339,7 +334,7 @@ main article { /*Banner*/
   width: 70%;
 }
 
-.card img {
+.card img, .recomendadas article p img {
   border-radius: 25px !important;
 }
 
@@ -499,7 +494,7 @@ main article { /*Banner*/
 /*Fondo del Footer*/
 footer {
   width: 100%;
-  background-image: url("../img/background footer.png");
+  background-image: url("../img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-for-product.jpg");
   background-size: cover;
   background-position: center;
 }
