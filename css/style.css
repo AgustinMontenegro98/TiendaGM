@@ -13,12 +13,9 @@ body {
   background-repeat: none;
 }
 
-.precio {
-  font-size: 20px;
+p {
+  font-size: px;
   font-family: "Poppins";
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: rgb(96, 240, 161);
 }
 
 ul { /*Sacando estilo a los hipervinculos y listas*/
@@ -34,11 +31,6 @@ a {
   justify-content: start;
   margin: 0 auto;
   max-width: 80%;
-}
-
-.containertitulos div button a {
-  text-decoration: none;
-  color: aliceblue;
 }
 
 .header { /*Fondo header y menu*/
@@ -57,19 +49,10 @@ nav ul li { /*Forma y color botones menu*/
   background-color: rgb(67, 4, 126);
   margin: 10px;
   padding: 7px;
-  border-radius: 15px;
-  transition: 0.5s;
+  border-radius: 10px;
 }
 nav ul li a {
   color: aliceblue;
-}
-
-.activo {
-  background-color: rgb(96, 240, 161);
-}
-
-nav ul li:hover {
-  background-color: rgb(96, 240, 161);
 }
 
 .bg-light {
@@ -92,8 +75,6 @@ nav ul li:hover {
 
 .nav-link {
   color: aliceblue;
-  padding: 5px !important;
-  line-height: 1 !important;
 }
 
 .navbar-nav {
@@ -196,15 +177,6 @@ main article { /*Banner*/
   color: aliceblue;
 }
 
-h2 {
-  display: flex;
-  margin: 0px 30px 0px 0px;
-  font-size: 30px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  color: aliceblue;
-}
-
 .rowpc {
   margin-left: 0 !important;
 }
@@ -259,8 +231,8 @@ h2 {
 
 .checksycomputadoras .checkboxs div label {
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
   color: aliceblue;
-  width: 100% !important;
 }
 
 .checksycomputadoras .checkboxs h5 {
@@ -272,7 +244,7 @@ h2 {
 }
 
 .checksycomputadoras .checkboxs h4 {
-  margin: 50px 0 10px 0;
+  margin: 50px 0 0 0;
 }
 
 .flexcomputadoras {
@@ -299,7 +271,6 @@ h2 {
 
 .horarios-pc {
   margin-bottom: 30px;
-  width: 59%;
 }
 
 .horarios-pc h5 {
@@ -356,8 +327,11 @@ h2 {
 }
 
 .medida div img {
-  width: 100%;
-  height: 100%;
+  height: 200px;
+}
+
+.medida {
+  width: 70%;
 }
 
 .card img, .recomendadas article p img {
@@ -376,11 +350,6 @@ h2 {
 
 .nopadding {
   padding: 0 !important;
-  margin: 0 !important;
-}
-
-.nopadding-card {
-  margin: 1em 0 0 5em !important;
 }
 
 .colorvioleta {
@@ -483,66 +452,6 @@ h2 {
 
 .tamañocontacto {
   width: 60%;
-  padding: 15px 15px 25px 15px;
-  border-radius: 15px;
-  background-image: url(../img/background-menu.jpg);
-  background-size: cover;
-}
-
-.tamañocontacto div {
-  margin-top: 2em;
-}
-
-.input-contacto {
-  color: aliceblue;
-  background-color: transparent;
-  border: 2px solid aliceblue !important;
-  border-top: none !important;
-  border-left: none !important;
-  border-right: none !important;
-  border-radius: none !important;
-}
-
-.input-contacto:focus {
-  background-color: transparent;
-  border-color: rgb(67, 4, 126) !important;
-  transform: 1s;
-  color: aliceblue;
-}
-
-.input-contacto:focus::placeholder {
-  color: transparent;
-}
-
-.input-mensaje {
-  max-width: 100%;
-  min-height: 5em;
-  border: 2px solid !important;
-}
-
-textarea:focus,
-input[type=text]:focus,
-input[type=password]:focus,
-input[type=datetime]:focus,
-input[type=datetime-local]:focus,
-input[type=date]:focus,
-input[type=month]:focus,
-input[type=time]:focus,
-input[type=week]:focus,
-input[type=number]:focus,
-input[type=email]:focus,
-input[type=url]:focus,
-input[type=search]:focus,
-input[type=tel]:focus,
-input[type=color]:focus,
-.uneditable-input:focus {
-  border-color: none !important;
-  box-shadow: none !important;
-  outline: 0 none;
-}
-
-.form-control {
-  border-radius: 0 !important;
 }
 
 .tamañocontacto div label {
@@ -550,20 +459,15 @@ input[type=color]:focus,
 }
 
 .table thead tr th {
-  color: aliceblue;
+  color: rgb(67, 4, 126);
 }
 
 .table tbody tr th {
-  color: rgb(96, 240, 161);
+  color: rgb(67, 4, 126);
 }
 
 .table tbody tr td {
   color: aliceblue;
-}
-
-.table tbody tr td {
-  text-align: center;
-  color: rgb(96, 240, 161);
 }
 
 .anchodesplegable {
@@ -654,8 +558,7 @@ footer section article a img {
 .logosinboot {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 1em;
+  justify-content: space-around;
   height: 5em;
   min-width: 100%;
   background-color: rgb(13, 13, 13);
@@ -670,22 +573,10 @@ footer section article a img {
 
 .logochico a img {
   width: 7em;
-  margin: 1em 2em 0 0;
-  animation: zoom-in-zoom-out 4s ease infinite;
 }
 
-@keyframes zoom-in-zoom-out {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.05, 1.05);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-}
 .medio {
+  max-width: 50%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -697,35 +588,13 @@ footer section article a img {
   padding: 0.5em 1em 0.5em 1em;
 }
 
-.medio form input:focus::placeholder {
-  color: transparent;
-  transition: 0.5s;
-}
-
 .logosinboot article form input {
   width: 45em;
-  border-radius: 15px !important;
 }
 
 .logosinboot article form button {
   height: 3.3em;
-  margin: 0 1.5em 0 1em;
-  background-color: white;
-  border-radius: 15px;
-}
-
-.logosinboot article form button img {
-  width: 50px;
-  padding: 10px;
-}
-
-.menusinboot {
-  margin: 0 auto !important;
-  padding: 20px;
-  background-image: url(../img/background-menu.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-bottom: 2px solid rgb(67, 4, 126);
+  margin-left: 1em;
 }
 
 .menusinboot ul {
@@ -775,10 +644,22 @@ footer section article div ul {
 
 /* Animacion */
 .footer-pc section article {
-  animation-duration: 0.5s;
-  animation-name: movimiento;
-  animation-iteration-count: initial;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-name: movimiento;
+          animation-name: movimiento;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
   position: relative;
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    left: 10px;
+  }
+  to {
+    right: 10px;
+  }
 }
 
 @keyframes movimiento {
@@ -810,13 +691,9 @@ footer section article div ul {
   header section article:nth-child(2) {
     min-width: 0;
   }
-  .carousel { /*Banner*/
+  main article { /*Banner*/
     width: 100%;
-    height: 250px;
-  }
-  .carousel div div img { /*Banner imgs*/
-    min-height: 230px;
-    min-width: 900px;
+    height: 150px;
   }
   .recomendadas {
     display: grid;
@@ -835,54 +712,15 @@ footer section article div ul {
   }
   .container {
     margin: 0 auto;
-    max-width: 90% !important;
-  }
-  .container80 {
-    margin: 0 auto !important;
-    max-width: none !important;
-    padding: 1em;
-  }
-  .titulos {
-    margin: 0 !important;
-    padding: 1em 0 !important;
-  }
-  .titulos h4 {
-    margin: 0 15px 0 0 !important;
-  }
-  .titulos button {
-    margin: 0 !important;
-    padding: 5px !important;
-    border-radius: 20px;
-    width: 100%;
-  }
-  .tituloscomputadoras h1 {
-    padding: 10px 30px;
-    margin: 0;
+    max-width: 90%;
   }
   .alturadesplegable {
     height: 50px;
     width: 0px;
-    padding: 10px 0 0 30px;
   }
   .recomendadas article div button {
     margin: 5px 0 0 5px;
     padding: 5px 5px;
-  }
-  .nopadding {
-    padding: 1em !important;
-  }
-  .nopadding-card {
-    margin: 1em !important;
-  }
-  .flexcomputadoras {
-    padding: 1.5em;
-  }
-  .tamañocontacto {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
-  .anchodesplegable {
-    min-width: 100% !important;
   }
   .footer-pc {
     display: none;
@@ -894,16 +732,13 @@ footer section article div ul {
   }
   .footer-cel {
     width: 100%;
-    background-image: url("../img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-for-product.jpg");
+    background-image: url("../img/background footer.png");
     background-size: cover;
     background-position: center;
     color: rgb(96, 240, 161);
   }
   .footer-cel p:last-child {
     font-size: 12px;
-  }
-  .footer-cel p {
-    margin-top: 20px;
   }
   .footer-cel article div a img {
     width: 40px;
@@ -957,6 +792,4 @@ footer section article div ul {
   .containertwo {
     display: none;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=style.css.map */

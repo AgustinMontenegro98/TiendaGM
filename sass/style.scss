@@ -8,7 +8,7 @@ $negro: rgb(17,17,17);
 $estilos: (
     fuente:'Poppins',
     ancho:100%,
-    tFuente:px
+    tFuente:20px
 );
 
 //Mixin
@@ -33,9 +33,12 @@ body{
     background-repeat: none;
 }
 
-p{
+.precio{
     font-size: map-get($estilos, tFuente );
     font-family: map-get($estilos, fuente);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: rgb(96, 240, 161);
 }
 
 ul{ /*Sacando estilo a los hipervinculos y listas*/
@@ -53,6 +56,11 @@ a{
     max-width: 80%;
 }
 
+.containertitulos div button a {
+    text-decoration: none;
+    color: $blanco;
+}
+
 .header{ /*Fondo header y menu*/
     width: map-get($estilos,ancho);
     background-color: rgb(0,0,0);
@@ -67,12 +75,21 @@ nav {  /*Menu*/
             background-color: $violeta;
             margin: 10px;
             padding: 7px;
-            border-radius: 10px;
+            border-radius: 15px;
+            transition: 0.5s;
             a{
                 color: $blanco;    
             }
         }
     }
+}
+
+.activo {
+background-color: rgb(96, 240, 161);
+}
+
+nav ul li:hover {
+    background-color: rgb(96, 240, 161);
 }
 
 .bg-light {
@@ -95,6 +112,8 @@ nav {  /*Menu*/
 
 .nav-link {
     color: $blanco;
+    padding: 5px!important;
+    line-height: 1!important;
 }
 
 .navbar-nav {
@@ -197,6 +216,16 @@ main article{ /*Banner*/
     color: $blanco;
 }
 
+h2{
+    display: flex;
+    margin: 0px 30px 0px 0px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: $blanco;
+}
+
+
 .rowpc {
     margin-left: 0 !important;
 }
@@ -253,8 +282,8 @@ main article{ /*Banner*/
 
 .checksycomputadoras .checkboxs div label{
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
     color: $blanco;
+    width: 100%!important;
 }
 
 .checksycomputadoras .checkboxs h5{
@@ -267,7 +296,7 @@ main article{ /*Banner*/
 }
 
 .checksycomputadoras .checkboxs h4{
-    margin: 50px 0 0 0;
+    margin: 50px 0 10px 0;
 }
 
 .flexcomputadoras {
@@ -295,6 +324,7 @@ main article{ /*Banner*/
 
 .horarios-pc{
     margin-bottom: 30px;
+    width: 59%;
 }
 
 .horarios-pc h5{
@@ -353,14 +383,11 @@ main article{ /*Banner*/
     border-top-left-radius: 25px;
     border-top-right-radius:25px ;
 }
-.medida div img{
-    height: 200px;
-}
 
-.medida{
-    width: 70%;
+.medida div img {
+    width: 100%;
+    height: 100%;
 }
-
 
 .card img{
     border-radius: 25px!important;
@@ -377,9 +404,13 @@ main article{ /*Banner*/
 }
 
 .nopadding {
-    padding: 0 !important;
+    padding: 0!important;
+    margin: 0!important;
 }
 
+.nopadding-card {
+    margin: 1em 0 0 5em!important;
+}
 
 .colorvioleta{
     color:  rgb(133, 54, 206);
@@ -488,22 +519,90 @@ main article{ /*Banner*/
 
 .tamañocontacto {
     width: 60%;
+    padding: 15px 15px 25px 15px;
+    border-radius: 15px;
+    background-image: url(../img/background-menu.jpg);
+    background-size: cover;
+}
 
+.tamañocontacto div {
+    margin-top: 2em;
+}
+
+.input-contacto {
+    color: $blanco;
+    background-color: transparent;
+    border: 2px solid $blanco !important;
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-radius: none!important;
+}
+
+.input-contacto:focus {
+    background-color: transparent;
+    border-color: $violeta!important;
+    transform: 1s;
+    color: $blanco;
+}
+
+.input-contacto:focus::placeholder {
+    color: transparent;
+}
+
+.input-mensaje {
+    max-width: 100%;
+    min-height: 5em;
+    border: 2px solid!important;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: none!important;
+  box-shadow: none!important;
+  outline: 0 none;
+}
+
+
+
+
+
+.form-control {
+border-radius: 0!important;
 }
 
 .tamañocontacto div label {
     color: $blanco;
 }
 .table thead tr th{
-    color: $violeta;
+    color: $blanco;
 }
 
 .table tbody tr th {
-    color:  $violeta;
+    color:  rgb(96, 240, 161);
 }
 
 .table tbody tr td {
     color: $blanco;
+}
+
+.table tbody tr td {
+    text-align: center;
+    color:  rgb(96, 240, 161);
 }
 
 .anchodesplegable {
@@ -598,7 +697,8 @@ footer section article a img{
     .logosinboot {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        margin-top: 1em;
         height: 5em;
         min-width: 100%;
         background-color: $gris;
@@ -613,28 +713,62 @@ footer section article a img{
 
     .logochico a img {
         width: 7em;
+        margin: 1em 2em 0 0;
+        animation: zoom-in-zoom-out 4s ease infinite;
     }
 
+    @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(1, 1);
+        }
+        50% {
+          transform: scale(1.05, 1.05);
+        }
+        100% {
+          transform: scale(1, 1);
+        }
+      }
+
     .medio {
-        max-width: 50%;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-
-    .comprar a{
+    .comprar a {
         background-color: $violeta;
         border-radius: 1em;
         padding: 0.5em 1em 0.5em 1em;
     }
 
+    .medio form input:focus::placeholder {
+        color: transparent;
+        transition: 0.5s;
+    }
+
     .logosinboot article form input {
         width: 45em;
+        border-radius: 15px!important;
     }
 
     .logosinboot article form button {
         height: 3.3em;
-        margin-left: 1em;
+        margin: 0 1.5em 0 1em;
+        background-color: white;
+        border-radius: 15px;
+    }
+    
+    .logosinboot article form button img {
+        width: 50px;
+        padding: 10px;
+        } 
+
+    .menusinboot {
+        margin: 0 auto!important;
+        padding: 20px;
+        background-image: url(../img/background-menu.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-bottom: 2px solid $violeta;
     }
 
     .menusinboot ul {
@@ -654,11 +788,11 @@ footer section article a img{
 
     /*Transform*/
 
-.titulos button { /* Botones */
+.titulos  button { /* Botones */
     transition: transform 0.5s;
 }
 
-.titulos button:hover {
+.titulos  button:hover {
     transform:scale(1.1,1.1);
 }
 
@@ -726,10 +860,16 @@ footer section article a img{
         min-width: 0;
     }
 
-    main article { /*Banner*/
+    .carousel { /*Banner*/
         width: 100%;
-        height: 150px;
+        height: 250px;
     }
+
+    .carousel div div img{ /*Banner imgs*/
+        min-height: 230px;
+        min-width: 900px;
+    }
+
     .recomendadas{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -747,14 +887,42 @@ footer section article a img{
         padding: 5px;
     }
 
-    .container{
+    .container {
         margin: 0 auto;
-        max-width: 90%;
+        max-width: 90%!important;
     }
+
+    .container80 {
+        margin: 0 auto!important;
+        max-width: none!important;
+        padding: 1em;
+    }
+
+    .titulos {
+        margin: 0!important;
+        padding: 1em 0!important;
+    }
+
+    .titulos h4 { 
+        margin: 0 15px 0 0!important;
+    }
+    .titulos button {
+        margin: 0!important;
+        padding: 5px!important;
+        border-radius: 20px;
+        width:  100%;
+    }
+
+    .tituloscomputadoras h1 {
+        padding: 10px 30px;
+        margin: 0;
+    }
+
 
     .alturadesplegable{
         height: 50px;
         width: 0px;
+        padding: 10px 0 0 30px;
     }
 
     .recomendadas article div button {
@@ -762,6 +930,24 @@ footer section article a img{
         padding: 5px 5px;
     }
 
+    .nopadding {
+        padding: 1em!important;
+    }
+    .nopadding-card {
+        margin: 1em!important;
+    }
+
+    .flexcomputadoras {
+        padding: 1.5em;
+    }
+    .tamañocontacto {
+        width: 100%!important;
+        margin-left: 0!important;
+    }
+
+    .anchodesplegable {
+        min-width: 100%!important;
+    }
     .footer-pc {
         display: none;
     }
@@ -775,7 +961,7 @@ footer section article a img{
 
     .footer-cel{ 
         width: 100%;
-        background-image: url('../img/background\ footer.png');
+        background-image: url('../img/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-for-product.jpg');
         background-size: cover;
         background-position: center;
         color: rgb(96, 240, 161);
@@ -783,6 +969,10 @@ footer section article a img{
 
     .footer-cel p:last-child {
         font-size: 12px;
+    }
+
+    .footer-cel p{
+        margin-top: 20px;
     }
     
     

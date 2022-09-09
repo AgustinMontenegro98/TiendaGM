@@ -14,307 +14,309 @@
 
 <body>
 
-<!-- NAV -->
+   <!-- NAV -->
 
-<nav class="navbar navbar-expand-lg bg-light containertwo">
-   <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-      </button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="../paginas/componentes.html">Componentes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contacto</a>
-				</li>
-			</ul>
-		</div>
-	</div>      
-</nav>
-
-<!-- Menu sin bootstrap Pc -->
-
-<nav class="menusinboot">
-   <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
-      <li class="nav-item">
-         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
-      </li>
-      <li class="nav-item">
-         <a class="nav-link" href="#">Contacto</a>
-      </li>
-   </ul>  
-</nav>
-
-<section class="logosinboot">
-   <article class="chico logochico">
-      <a href="#">
-         <img src="../img/logo.png" alt="">
-      </a>
-   </article>
-
-   <article class="medio">
-      <form class="d-flex" role="search">
-         <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
-         <button class="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
-   </article>
-
-   <article class="chico comprar">
-      <a href="#">
-         <img src="../img/carrito.png" alt="" width="40" height="40">
-      </a>
-   </article>
-</section>
-
-
-
-<div class="container80"> <!--Ancho pagina 80%-->
-
-
-   <div class="tituloscomputadoras">
-      <h1>CONTACTO</h1>
-   </div>
-
-	<!--Formulario-->
-
-   <form class="row g-3 tamañocontacto">
-      <div class="col-md-6">
-			<label for="inputEmail4" class="form-label">Nombre</label>
-			<input type="email" class="form-control" id="Nombre" placeholder="Tu Nombre">
-      </div>
-      <div class="col-md-6">
-			<label for="inputPassword4" class="form-label">Apellido</label>
-			<input type="password" class="form-control" id="apellido" placeholder="Tu Apellido">
-      </div>
-      <div class="col-12">
-			<label for="inputAddress" class="form-label">Email</label>
-			<input type="text" class="form-control" id="inputAddress" placeholder="xxxxxx@xxxx.xxx">
-      </div>
-      <div class="col-12">
-			<label for="inputAddress2" class="form-label">Dejanos tu consulta</label>
-			<input type="text" class="form-control" id="inputAddress2" placeholder="Tu mensaje">
-		</div>
-      <div class="col-12">
-			<button type="submit" class="btn btn-primary">Enviar</button>
-      </div>
-   </form>
-
-   <div class="tituloscomputadoras">
-      <h1>HORARIOS DE ATENCIÓN</h1>
-   </div>
-
-	<!--Desplegable sucursal-->
-
-   <select class="form-select mt-4 mb-4 anchodesplegable" aria-label="Default select example">
-      <option selected>Sucursal</option>
-      <option value="1">Sucursal Obelisco</option>
-      <option value="2">Sucursal Palermo</option>
-      <option value="3">Sucursal Recoleta</option>
-   </select>
-
-
-
-   <!-- Tabla Bootstrap -->
-
-   <table class="table mt-3 mb-5 horarios-pc">
-      <thead>
-         <tr>
-            <th>Dia/Horario</th>
-            <th>Lunes</th>
-            <th>Martes</th>
-            <th>Miercoles</th>
-            <th>Jueves</th>
-            <th>Viernes</th>
-            <th>Sabado</th>
-            <th>Domingo</th>
-            <th>Feriados</th>
-         </tr>
-      </thead>
-      <tbody class="table-group-divider">
-			<tr>
-				<th scope="row">9 a 18hs</th>
-				<td>X</td>
-				<td>X</td>
-				<td>X</td>
-				<td>X</td>
-				<td>X</td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">9 a 13hs</th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>X</td>
-				<td></td>
-				<td>X</td>
-			</tr>
-			<tr>
-				<th scope="row">Cerrado</th>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td>X</td>
-				<td></td>
-			</tr>
-		</tbody>
-   </table>
-
-
-
-   <!-- Tabla horarios para celu -->
-
-   <table class="table mt-3 mb-5 horarios-celu">
-		<thead>
-			<tr>
-				<th>Dia/Horario</th>
-				<th>9 a 18hs</th>
-				<th>9 a 13hs</th>
-				<th>Cerrado</th>
-			</tr>
-		</thead>
-		<tbody class="table-group-divider">
-			<tr>
-				<th scope="row">Lunes</th>
-				<td>X</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Martes</th>
-				<td>X</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Miercoles</th>
-				<td>X</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Jueves</th>
-				<td>X</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Viernes</th>
-				<td>X</td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Sabado</th>
-				<td></td>
-				<td>X</td>
-				<td></td>
-			</tr>
-			<tr>
-				<th scope="row">Domingo</th>
-				<td></td>
-				<td></td>
-				<td>X</td>
-			</tr>
-			<tr>
-				<th scope="row">Feriado</th>
-				<td></td>
-				<td>X</td>
-				<td></td>
-			</tr>
-		</tbody>
-   </table>
-</div>
-
-<footer class="footer-pc"> <!--Footer-->
-   <section>
-      <article>
-         <div>
-            <h5>Categorias</h5>
-            <ul>
-               <li><a href="">Placas de Video</a></li>
-               <li><a href="">Procesadores</a></li>
-               <li><a href="">Memorias</a></li>
-               <li><a href="">Almacenamiento</a></li>
-               <li><a href="">Refrigeracion</a></li>
-               <li><a href="">Todas las categorias</a></li>
+   <nav class="navbar navbar-expand-lg bg-light containertwo">
+      <div class="container-fluid">
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+               <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+               </li>
             </ul>
          </div>
+      </div>      
+   </nav>
+
+   <!-- Menu sin bootstrap Pc -->
+
+   <nav class="menusinboot">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+         <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="../paginas/computadoras.html">Computadoras</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="../paginas/notebooks.html">Notebooks</a>
+         </li>
+         <li class="nav-item">
+            <a class="nav-link" href="../paginas/componentes.html">Componentes</a>
+         </li>
+         <li class="nav-item activo">
+            <a class="nav-link" href="#">Contacto</a>
+         </li>
+      </ul>  
+   </nav>
+
+   <section class="logosinboot">
+      <article class="chico logochico">
+         <a href="#">
+            <img src="../img/logo.png" alt="logo">
+         </a>
       </article>
-		<article>
-         <div>
-            <h5>Marcas</h5>
-               <ul>
-                  <li><a href="">Intel</a></li>
-                  <li><a href="">AMD</a></li>
-                  <li><a href="">Asus</a></li>
-                  <li><a href="">Nvidia</a></li>
-               </ul>
-         </div>
+
+      <article class="medio">
+         <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscador" aria-label="Search">
+            <button>
+               <img src="../img/lupa.png" alt="buscar">
+            </button>
+         </form>
       </article>
-      <article>
-         <div>
-            <h5>Informacion Util</h5>
-            <ul>
-               <li><a href="">Faq</a></li>
-               <li><a href="">Terminos y condiciones</a></li>
-               <li><a href="">Ubicacion</a></li>
-               <li><a href="">Contacto</a></li>
-            </ul>
-         </div>
-      </article>
-      <article> <!--Logos Redes-->
-         <div>
-               <h5>Redes</h5>
-                  <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
-                  <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
-                  <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
-                  <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
-         </div>
+
+      <article class="chico comprar">
+         <a href="#">
+            <img src="../img/carrito.png" alt="carrito" width="40" height="40">
+         </a>
       </article>
    </section>
-</footer>
 
-<footer class="footer-cel">
-   <p>Seguinos en las Redes</p>
-   <article> <!--Logos Redes-->
-      <div>
-         <h5>Redes</h5>
-            <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
-            <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
-            <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
-            <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
+
+
+   <div class="container80"> <!--Ancho pagina 80%-->
+
+
+      <div class="tituloscomputadoras mt-5 mb-3">
+         <h1>CONTACTO</h1>
       </div>
-   </article>
-   <p>Lunes a viernes de 9:00 a 18:00hs. Sabados de 9:00 a 13:00hs.</p>
-</footer>
+
+      <!--Formulario-->
+
+      <form class="row g-3 tamañocontacto">
+         <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nombre</label>
+            <input type="email" class="form-control input-contacto" id="Nombre" placeholder="Tu Nombre">
+         </div>
+         <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Apellido</label>
+            <input type="password" class="form-control input-contacto" id="apellido" placeholder="Tu Apellido">
+         </div>
+         <div class="col-12">
+            <label for="inputAddress" class="form-label">Email</label>
+            <input type="text" class="form-control input-contacto" id="inputAddress" placeholder="email@email.com">
+         </div>
+         <div class="col-12">
+            <label for="inputAddress2" class="form-label">Dejanos tu consulta:</label>
+            <input type="text" class="form-control input-contacto input-mensaje" id="inputAddress2" placeholder="">
+         </div>
+         <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+         </div>
+      </form>
+
+      <div class="tituloscomputadoras mt-3">
+         <h2>HORARIOS DE ATENCIÓN:</h2>
+      </div>
+
+      <!--Desplegable sucursal-->
+
+      <select class="form-select mt-4 mb-5 anchodesplegable" aria-label="Default select example">
+         <option selected>Sucursal</option>
+         <option value="1">Sucursal Obelisco</option>
+         <option value="2">Sucursal Palermo</option>
+         <option value="3">Sucursal Recoleta</option>
+      </select>
+
+
+
+      <!-- Tabla Bootstrap -->
+
+      <table class="table mt-3 mb-5 horarios-pc">
+         <thead>
+            <tr>
+               <th>Dia/Horario</th>
+               <th>Lunes</th>
+               <th>Martes</th>
+               <th>Miercoles</th>
+               <th>Jueves</th>
+               <th>Viernes</th>
+               <th>Sabado</th>
+               <th>Domingo</th>
+               <th>Feriados</th>
+            </tr>
+         </thead>
+         <tbody class="table-group-divider">
+            <tr>
+               <th scope="row">9 a 18hs</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">9 a 13hs</th>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+            </tr>
+            <tr>
+               <th scope="row">Cerrado</th>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+
+
+
+      <!-- Tabla horarios para celu -->
+
+      <table class="table mt-3 mb-5 horarios-celu">
+         <thead>
+            <tr>
+               <th>Dia/Horario</th>
+               <th>9 a 18hs</th>
+               <th>9 a 13hs</th>
+               <th>Cerrado</th>
+            </tr>
+         </thead>
+         <tbody class="table-group-divider">
+            <tr>
+               <th scope="row">Lunes</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Martes</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Miercoles</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Jueves</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Viernes</th>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Sabado</th>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+            </tr>
+            <tr>
+               <th scope="row">Domingo</th>
+               <td></td>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+            </tr>
+            <tr>
+               <th scope="row">Feriado</th>
+               <td></td>
+               <td><img src="../img/cheque.png" alt="check"></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+   </div>
+
+   <footer class="footer-pc"> <!--Footer-->
+      <section>
+         <article>
+            <div>
+               <h5>Categorias</h5>
+               <ul>
+                  <li><a href="">Placas de Video</a></li>
+                  <li><a href="">Procesadores</a></li>
+                  <li><a href="">Memorias</a></li>
+                  <li><a href="">Almacenamiento</a></li>
+                  <li><a href="">Refrigeracion</a></li>
+                  <li><a href="">Todas las categorias</a></li>
+               </ul>
+            </div>
+         </article>
+         <article>
+            <div>
+               <h5>Marcas</h5>
+                  <ul>
+                     <li><a href="">Intel</a></li>
+                     <li><a href="">AMD</a></li>
+                     <li><a href="">Asus</a></li>
+                     <li><a href="">Nvidia</a></li>
+                  </ul>
+            </div>
+         </article>
+         <article>
+            <div>
+               <h5>Informacion Util</h5>
+               <ul>
+                  <li><a href="">Faq</a></li>
+                  <li><a href="">Terminos y condiciones</a></li>
+                  <li><a href="">Ubicacion</a></li>
+                  <li><a href="">Contacto</a></li>
+               </ul>
+            </div>
+         </article>
+         <article> <!--Logos Redes-->
+            <div>
+                  <h5>Redes</h5>
+                     <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
+                     <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
+                     <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
+                     <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
+            </div>
+         </article>
+      </section>
+   </footer>
+
+   <footer class="footer-cel">
+      <p>Seguinos en las Redes</p>
+      <article> <!--Logos Redes-->
+         <div>
+            <h5>Redes</h5>
+               <a href=""><img src="../img/whatsapp.png" alt="Whatsapplogo"></a>
+               <a href=""><img src="../img/twitter.png" alt="Twitterlogo"></a>
+               <a href=""><img src="../img/facebook.png" alt="Facebooklogo"></a>
+               <a href=""><img src="../img/youtube.png" alt="Youtubelogo"></a>
+         </div>
+      </article>
+      <p>Lunes a viernes de 9:00 a 18:00hs. Sabados de 9:00 a 13:00hs.</p>
+   </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
